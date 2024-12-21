@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'org.fl1s'
-version = '0.0.1-SNAPSHOT'
+version = 'latest'
 
 java {
     toolchain {
@@ -25,4 +25,9 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+tasks.named('jar') {
+    archiveBaseName.set("spring-images-new")
+    archiveVersion.set("latest")
 }
