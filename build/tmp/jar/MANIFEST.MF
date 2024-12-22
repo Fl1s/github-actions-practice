@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: annotationProcessor apiElements archives bootArchives compil
+ eClasspath compileOnly default developmentOnly implementation mainSourc
+ eElements productionRuntimeClasspath runtimeClasspath runtimeElements r
+ untimeOnly testAndDevelopmentOnly testAnnotationProcessor testCompileCl
+ asspath testCompileOnly testImplementation testResultsElementsForTest t
+ estRuntimeClasspath testRuntimeOnly
+Main-Class: org.fl1s.GithubCicdActionsApplication
+
