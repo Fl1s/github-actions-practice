@@ -17,6 +17,7 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -29,5 +30,13 @@ tasks.named('test') {
 
 tasks.named('jar') {
     archiveBaseName.set("spring-images-new")
-    archiveVersion.set("latest")
+    archiveVersion.set("")
+    archiveClassifier.set("")
+}
+
+tasks.named('bootJar') {
+    enabled = false
+}
+tasks.named('jar') {
+    enabled = true
 }
