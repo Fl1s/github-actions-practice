@@ -26,6 +26,13 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+jar {
+	manifest {
+		attributes(
+				'Main-Class': 'org.fl1s.githubactionspractice.GithubActionsPracticeApplication'
+		)
+	}
+}
 
 tasks.named('jar') {
     archiveBaseName.set("spring-images-new")
