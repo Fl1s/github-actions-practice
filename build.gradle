@@ -1,7 +1,7 @@
 plugins {
-	id 'java'
 	id 'org.springframework.boot' version '3.4.1'
 	id 'io.spring.dependency-management' version '1.1.7'
+	id 'java'
 }
 
 group = 'org.fl1s'
@@ -27,15 +27,10 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 jar {
-	manifest {
-		attributes(
-				'Main-Class': 'org.fl1s.githubactionspractice.GithubActionsPracticeApplication'
-		)
-	}
+	enabled = false
 }
-
-tasks.named('jar') {
-    archiveBaseName.set("spring-images-new")
-    archiveVersion.set("")
-    archiveClassifier.set("")
+bootJar {
+	archiveBaseName.set("spring-images-new")
+	archiveVersion.set("")
+	archiveClassifier.set("")
 }
